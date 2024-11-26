@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";
+import NavbarGeneral from "../components/NavbarGeneral.jsx";
+import "../styles/global.css";
+---
+
+<Layout title="FAQ">
+  <NavbarGeneral client:load />
+  <main class="prose prose-lg overflow-x-hidden mt-16">
+    <section
+      id="festival"
+      class="pt-16 px-4 w-full h-screen bg-no-repeat bg-cover bg-top"
+      style="background-image: url('/background-b.svg');"
+    >
+      <h1
+        class="text-center font-raleway text-[1.5rem] font-black leading-[130%]"
+      >
+        FAQ
+      </h1>
+      <div
+        class="bg-white py-8 px-4 rounded-lg shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
+      >
+      </div>
+    </section>
+  </main>
+</Layout>

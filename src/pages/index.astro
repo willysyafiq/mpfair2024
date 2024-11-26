@@ -33,20 +33,15 @@ import HeroFig from "../assets/hero-image.png";
           21-22 Desember 2024
         </p>
       </div>
-      <div class="flex flex-col items-center px-4">
+      <div class="flex flex-col items-center px-12">
         <a
           href="/tiket"
-          class="block w-full py-3 bg-[#EB1B31] text-center text-white rounded-full no-underline font-raleway font-black text-[1.125rem] leading-[130%] shadow-[0px_6px_10px_4px_rgba(0,0,0,0.15),0px_2px_3px_0px_rgba(0,0,0,0.30)]"
+          class="block w-full py-3 bg-[#EB1B31] text-center text-white rounded-full no-underline font-raleway font-extrabold text-[1.125rem] leading-[130%] shadow-[0px_6px_10px_4px_rgba(0,0,0,0.15),0px_2px_3px_0px_rgba(0,0,0,0.30)]"
         >
           Beli Tiket
         </a>
         <a href="#countdown" class="scroll-smooth">
-          <img
-            src="/arrow-down.svg"
-            width="2rem"
-            alt="Scroll Down"
-            class="mt-4 mb-0"
-          />
+          <img src="/arrow-down.svg" alt="Scroll Down" class="mt-4 mb-0" />
         </a>
       </div>
     </section>
@@ -56,63 +51,86 @@ import HeroFig from "../assets/hero-image.png";
       style="background-image: url('/background-a.svg');"
     >
       <!-- Countdown -->
-      <div class="bg-[#EB1B31] py-4 flex justify-center">
-        <div class="flex bg-[#EB1B31] px-6 w-full">
+
+      <div id="countdown" class="flex bg-[#EB1B31] py-6 px-6 w-full relative">
+        <img
+          src="/timer-decor-top-b.svg"
+          alt="decorative"
+          class="absolute right-[1.25rem] top-[-3rem]"
+          width="140"
+        />
+        <img
+          src="/timer-decor-top-a.svg"
+          alt="decorative"
+          class="absolute left-[1.25rem] top-[-3rem]"
+          width="154"
+        />
+        <img
+          src="/timer-decor-bottom-a.svg"
+          alt="decorative"
+          class="absolute left-[0rem] bottom-[-2rem]"
+          width="30"
+        />
+        <img
+          src="/timer-decor-bottom-b.svg"
+          alt="decorative"
+          class="absolute right-[0rem] bottom-[-2rem]"
+          width="30"
+        />
+        <div
+          class="flex flex-col justify-center bg-white p-[0.875rem_1rem_1.125rem_1rem] rounded-l-lg flex-1 border-r-2 border-[#E2E2E2]"
+        >
           <div
-            class="flex flex-col justify-center bg-white p-[0.875rem_1rem_1.125rem_1rem] rounded-l-lg flex-1 border-r-2 border-[#E2E2E2]"
+            class="font-raleway text-[1.5rem] text-center font-black leading-[130%]"
           >
-            <div
-              class="font-raleway text-[1.5rem] text-center font-black leading-[130%]"
-            >
-              14
-            </div>
-            <div
-              class="font-raleway text-[.75rem] text-center font-black leading-[130%]"
-            >
-              Hari
-            </div>
+            14
           </div>
           <div
-            class="flex flex-col justify-center bg-white p-[0.875rem_1rem_1.125rem_1rem] flex-1 border-r-2 border-[#E2E2E2]"
+            class="font-raleway text-[.75rem] text-center text-slate-500 font-extrabold leading-[130%]"
           >
-            <div
-              class="font-raleway text-[1.5rem] text-center font-black leading-[130%]"
-            >
-              24
-            </div>
-            <div
-              class="font-raleway text-[.75rem] text-center font-black leading-[130%]"
-            >
-              Jam
-            </div>
+            Hari
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-center bg-white p-[0.875rem_1rem_1.125rem_1rem] flex-1 border-r-2 border-[#E2E2E2]"
+        >
+          <div
+            class="font-raleway text-[1.5rem] text-center font-black leading-[130%]"
+          >
+            24
           </div>
           <div
-            class="flex flex-col justify-center bg-white p-[0.875rem_1rem_1.125rem_1rem] flex-1 border-r-2 border-[#E2E2E2]"
+            class="font-raleway text-[.75rem] text-center text-slate-500 font-extrabold leading-[130%]"
           >
-            <div
-              class="font-raleway text-[1.5rem] text-center font-black leading-[130%]"
-            >
-              60
-            </div>
-            <div
-              class="font-raleway text-[.75rem] text-center font-black leading-[130%]"
-            >
-              Menit
-            </div>
+            Jam
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-center bg-white p-[0.875rem_1rem_1.125rem_1rem] flex-1 border-r-2 border-[#E2E2E2]"
+        >
+          <div
+            class="font-raleway text-[1.5rem] text-center font-black leading-[130%]"
+          >
+            60
           </div>
           <div
-            class="flex flex-col justify-center bg-white p-[0.875rem_1rem_1.125rem_1rem] rounded-r-lg flex-1"
+            class="font-raleway text-[.75rem] text-center text-slate-500 font-extrabold leading-[130%]"
           >
-            <div
-              class="font-raleway text-[1.5rem] text-center font-black leading-[130%]"
-            >
-              30
-            </div>
-            <div
-              class="font-raleway text-[.75rem] text-center font-black leading-[130%]"
-            >
-              Detik
-            </div>
+            Menit
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-center bg-white p-[0.875rem_1rem_1.125rem_1rem] rounded-r-lg flex-1"
+        >
+          <div
+            class="font-raleway text-[1.5rem] text-center font-black leading-[130%]"
+          >
+            30
+          </div>
+          <div
+            class="font-raleway text-[.75rem] text-center text-slate-500 font-extrabold leading-[130%]"
+          >
+            Detik
           </div>
         </div>
       </div>
