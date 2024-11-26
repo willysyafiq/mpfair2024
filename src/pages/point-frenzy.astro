@@ -1,0 +1,71 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Image from "astro/components/Image.astro";
+import "../styles/global.css";
+import NavbarGeneral from "../components/NavbarGeneral.jsx";
+import DiskonSpesial from "../assets/diskon-spesial-card.png";
+---
+
+<Layout title="Point Frenzy">
+  <NavbarGeneral client:load />
+  <main class="prose prose-lg overflow-x-hidden mt-16">
+    <!-- Artist Section -->
+    <section
+      id="artist"
+      class="pt-16 px-4 w-full h-screen bg-no-repeat bg-cover bg-top"
+      style="background-image: url('/background-b.svg');"
+    >
+      <div class="px-4">
+        <h1
+          class="text-center font-raleway text-[1.5rem] font-black leading-[130%]"
+        >
+          Point Frenzy
+        </h1>
+        <p class="text-center text-[1rem] leading-[150%]">
+          Kamu berkesempatan untuk mendapat diskon di jam spesial tetap pantau
+          page ini ya.
+        </p>
+      </div>
+
+      <!-- Diskon Spesial -->
+      <Image src={DiskonSpesial} alt="Diskon Spesial" class="px-4" />
+
+      <div class="grid grid-cols-3 mb-6">
+        <div class="flex justify-center">
+          <img src="tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0" />
+        </div>
+        <div class="flex justify-center">
+          <img src="tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0" />
+        </div>
+        <div class="flex justify-center">
+          <img src="tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0" />
+        </div>
+      </div>
+      <div class="grid grid-cols-3 mb-6">
+        <div class="flex justify-center">
+          <img src="tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0" />
+        </div>
+        <div class="flex justify-center">
+          <img src="tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0" />
+        </div>
+        <div class="flex justify-center">
+          <img src="tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0" />
+        </div>
+      </div>
+      <div class="grid grid-cols-3 mb-6">
+        <div class="flex justify-center">
+          <img src="tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0" />
+        </div>
+        <div class="flex justify-center">
+          <img src="tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0" />
+        </div>
+        <div class="flex justify-center">
+          <img src="tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0" />
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <img src="tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0" />
+      </div>
+    </section>
+  </main>
+</Layout>
