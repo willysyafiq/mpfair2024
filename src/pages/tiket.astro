@@ -1,6 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import NavbarGeneral from "../components/NavbarGeneral.jsx";
+import Image from "astro/components/Image.astro";
+import CtaAppStore from "../assets/cta-appstore.png";
+import CtaGooglePlay from "../assets/cta-googleplay.png";
 import "../styles/global.css";
 ---
 
@@ -31,9 +34,13 @@ import "../styles/global.css";
           <li class="my-0">Buka menu E-Voucher</li>
           <li class="my-0">Pilih event MyPertamina Fair 2024</li>
         </ol>
-        <div class="flex justify-center gap-6">
-          <img class="h-12" src="cta-appstore.png" alt="CTA AppStore" />
-          <img class="h-12" src="cta-googleplay.png" alt="CTA AppStore" />
+        <div class="flex justify-center gap-8 px-2">
+          <div>
+            <Image src={CtaAppStore} alt="CTA AppStore" />
+          </div>
+          <div>
+            <Image src={CtaGooglePlay} alt="CTA AppStore" />
+          </div>
         </div>
       </div>
     </section>

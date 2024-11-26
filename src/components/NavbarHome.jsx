@@ -50,7 +50,7 @@ const HamburgerMenu = () => {
             </li>
             <li className="w-full">
               <a
-                href="/tiket"
+                href="/point-frenzy"
                 className="block w-full py-3 bg-white text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
               >
                 Point Frenzy
@@ -62,14 +62,6 @@ const HamburgerMenu = () => {
                 className="block w-full py-3 bg-white text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
               >
                 Festival
-              </a>
-            </li>
-            <li className="w-full">
-              <a
-                href="/contact"
-                className="block w-full py-3 bg-white text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
-              >
-                Contact
               </a>
             </li>
             <li className="w-full">
