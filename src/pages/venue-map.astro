@@ -36,12 +36,40 @@ import "../styles/global.css";
           />
         </div>
         <div class="flex justify-center py-2">
+          <!-- Modal Trigger -->
           <a
-            href="/tiket"
+            href="#"
             class="px-6 py-3 bg-[#EB1B31] text-center text-white rounded-full no-underline font-raleway font-extrabold text-[1rem] leading-[130%] shadow-[0px_6px_10px_4px_rgba(0,0,0,0.15),0px_2px_3px_0px_rgba(0,0,0,0.30)]"
+            onclick="document.getElementById('modal').classList.remove('hidden');"
           >
             Lihat Detail
           </a>
+
+          <!-- Modal -->
+          <div
+            id="modal"
+            class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50 p-4"
+          >
+            <div class="bg-white w-full h-full relative rounded-lg">
+              <button
+                class="absolute top-4 right-4 text-black"
+                onclick="document.getElementById('modal').classList.add('hidden');"
+              >
+                <img src="close-menu.svg" alt="Close Icon" class="h-8 my-0" />
+              </button>
+              <div class="px-8 py-6">
+                <h2 class="text-2xl font-bold mb-4 my-0">Lantai 1</h2>
+                <div>
+                  <Image src={MapL1} alt="Map" />
+                  <ol>
+                    <li class="mt-0 mb-1">Gate</li>
+                    <li class="mt-0 mb-1">Screening Are</li>
+                    <li class="mt-0 mb-1">Big Store Truck</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

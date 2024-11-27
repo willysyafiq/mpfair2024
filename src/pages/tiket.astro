@@ -4,6 +4,7 @@ import NavbarGeneral from "../components/NavbarGeneral.jsx";
 import Image from "astro/components/Image.astro";
 import CtaAppStore from "../assets/cta-appstore.png";
 import CtaGooglePlay from "../assets/cta-googleplay.png";
+import QRCode from "../assets/qr-code.png";
 import "../styles/global.css";
 ---
 
@@ -29,24 +30,37 @@ import "../styles/global.css";
         >
           Dapatkan Tiketnya di Aplikasi MyPertamina
         </h2>
-        <ol class="font-cabin text-[1rem] font-normal leading-[170%] mb-0">
+        <ol
+          class="font-cabin text-[1rem] font-normal leading-[170%] mb-0 text-center list-inside"
+        >
           <li class="my-0">Install aplikasi <strong>MyPertamina</strong></li>
           <li class="my-0">Buka menu E-Voucher</li>
           <li class="my-0">Pilih event MyPertamina Fair 2024</li>
         </ol>
+        <div class="hidden md:flex justify-center">
+          <Image class="size-80" src={QRCode} alt="QR Code" />
+        </div>
         <div class="flex justify-center gap-8 px-2">
           <div>
             <a
               href="https://play.google.com/store/apps/details?id=com.dafturn.mypertamina&pcampaignid=web_share"
             >
-              <Image src={CtaAppStore} alt="CTA AppStore" />
+              <Image
+                class="w-full md:w-60"
+                src={CtaAppStore}
+                alt="CTA AppStore"
+              />
             </a>
           </div>
           <div>
             <a
               href="https://apps.apple.com/id/app/mypertamina/id1295039064?l=id"
             >
-              <Image src={CtaGooglePlay} alt="CTA AppStore" />
+              <Image
+                class="w-full md:w-60"
+                src={CtaGooglePlay}
+                alt="CTA AppStore"
+              />
             </a>
           </div>
         </div>
