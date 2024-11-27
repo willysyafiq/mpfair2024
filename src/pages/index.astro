@@ -4,6 +4,9 @@ import Image from "astro/components/Image.astro";
 import NavbarHome from "../components/NavbarHome.jsx";
 import "../styles/global.css";
 import HeroFig from "../assets/hero-image.png";
+import CountDown from "../components/Countdown";
+
+const TheDay = new Date("Dec 21, 2024").getTime();
 ---
 
 <Layout title="MyPertamina Fair 2024">
@@ -50,89 +53,7 @@ import HeroFig from "../assets/hero-image.png";
       style="background-image: url('/background-a.svg');"
     >
       <!-- Countdown -->
-
-      <div id="countdown" class="flex bg-[#EB1B31] py-6 px-6 w-full relative">
-        <img
-          src="/timer-decor-top-b.svg"
-          alt="decorative"
-          class="absolute right-[1.25rem] top-[-3rem]"
-          width="140"
-        />
-        <img
-          src="/timer-decor-top-a.svg"
-          alt="decorative"
-          class="absolute left-[1.25rem] top-[-3rem]"
-          width="154"
-        />
-        <img
-          src="/timer-decor-bottom-a.svg"
-          alt="decorative"
-          class="absolute left-[0rem] bottom-[-2rem]"
-          width="30"
-        />
-        <img
-          src="/timer-decor-bottom-b.svg"
-          alt="decorative"
-          class="absolute right-[0rem] bottom-[-2rem]"
-          width="30"
-        />
-        <div
-          class="flex flex-col justify-center bg-white p-[0.875rem_1rem_1.125rem_1rem] rounded-l-lg flex-1 border-r-2 border-[#E2E2E2]"
-        >
-          <div
-            class="font-raleway text-[1.5rem] text-center font-black leading-[130%]"
-          >
-            14
-          </div>
-          <div
-            class="font-raleway text-[.75rem] text-center text-slate-500 font-extrabold leading-[130%]"
-          >
-            Hari
-          </div>
-        </div>
-        <div
-          class="flex flex-col justify-center bg-white p-[0.875rem_1rem_1.125rem_1rem] flex-1 border-r-2 border-[#E2E2E2]"
-        >
-          <div
-            class="font-raleway text-[1.5rem] text-center font-black leading-[130%]"
-          >
-            24
-          </div>
-          <div
-            class="font-raleway text-[.75rem] text-center text-slate-500 font-extrabold leading-[130%]"
-          >
-            Jam
-          </div>
-        </div>
-        <div
-          class="flex flex-col justify-center bg-white p-[0.875rem_1rem_1.125rem_1rem] flex-1 border-r-2 border-[#E2E2E2]"
-        >
-          <div
-            class="font-raleway text-[1.5rem] text-center font-black leading-[130%]"
-          >
-            60
-          </div>
-          <div
-            class="font-raleway text-[.75rem] text-center text-slate-500 font-extrabold leading-[130%]"
-          >
-            Menit
-          </div>
-        </div>
-        <div
-          class="flex flex-col justify-center bg-white p-[0.875rem_1rem_1.125rem_1rem] rounded-r-lg flex-1"
-        >
-          <div
-            class="font-raleway text-[1.5rem] text-center font-black leading-[130%]"
-          >
-            30
-          </div>
-          <div
-            class="font-raleway text-[.75rem] text-center text-slate-500 font-extrabold leading-[130%]"
-          >
-            Detik
-          </div>
-        </div>
-      </div>
+      <CountDown client:load newYear={TheDay} />
 
       <!-- Information -->
       <div id="information" class="px-8 mb-28 mt-20">
