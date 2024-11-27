@@ -48,7 +48,7 @@ import "../styles/global.css";
           <!-- Modal -->
           <div
             id="modal"
-            class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50 p-4"
+            class="fixed inset-0 bg-black bg-opacity-50 items-center justify-center hidden z-50 p-4"
           >
             <div class="bg-white w-full h-full relative rounded-lg">
               <button
@@ -75,26 +75,54 @@ import "../styles/global.css";
 
       <!-- Lantai 2 -->
       <div
-        class="bg-white mt-8 py-4 px-2 rounded-lg shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
+        class="bg-white py-4 px-2 rounded-lg shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
       >
         <div class="px-4">
-          <p class="my-0 text-lg font-extrabold">Lantai 2</p>
+          <p class="my-0 text-lg font-extrabold">Lantai 1</p>
         </div>
         <div>
           <Image
             src={MapL2}
             class="max-w-full mx-auto mt-0 mb-4"
-            alt="Venue Map Lt2"
+            alt="Venue Map Lt1"
             loading="eager"
           />
         </div>
         <div class="flex justify-center py-2">
+          <!-- Modal Trigger -->
           <a
-            href="/tiket"
+            href="#"
             class="px-6 py-3 bg-[#EB1B31] text-center text-white rounded-full no-underline font-raleway font-extrabold text-[1rem] leading-[130%] shadow-[0px_6px_10px_4px_rgba(0,0,0,0.15),0px_2px_3px_0px_rgba(0,0,0,0.30)]"
+            onclick="document.getElementById('modal2').classList.remove('hidden');"
           >
             Lihat Detail
           </a>
+
+          <!-- Modal -->
+          <div
+            id="modal2"
+            class="fixed inset-0 bg-black bg-opacity-50 items-center justify-center hidden z-50 p-4"
+          >
+            <div class="bg-white w-full h-full relative rounded-lg">
+              <button
+                class="absolute top-4 right-4 text-black"
+                onclick="document.getElementById('modal2').classList.add('hidden');"
+              >
+                <img src="close-menu.svg" alt="Close Icon" class="h-8 my-0" />
+              </button>
+              <div class="px-8 py-6">
+                <h2 class="text-2xl font-bold mb-4 my-0">Lantai 2</h2>
+                <div>
+                  <Image src={MapL2} alt="Map" />
+                  <ol>
+                    <li class="mt-0 mb-1">Gate</li>
+                    <li class="mt-0 mb-1">Screening Are</li>
+                    <li class="mt-0 mb-1">Big Store Truck</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
