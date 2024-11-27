@@ -15,7 +15,7 @@ const Accordion = ({ data }) => {
             className="cursor-pointer flex flex-row md:flex-row gap-3 w-full"
             onClick={() => handleToggle(index)}
           >
-            <p className="text-[1rem] md:text-[1.125rem] leading-[150%] font-raleway font-extrabold flex-grow mt-0 mb-2">
+            <p className="text-[1rem] leading-[150%] font-raleway font-bold flex-grow mt-0 mb-2">
               {item.question}
             </p>
 
@@ -35,7 +35,7 @@ const Accordion = ({ data }) => {
           </div>
           {activeIndex === index && (
             <div className="w-full">
-              <p className="text-[1rem] md:text-[1.125rem] leading-[150%] mt-0 mb-4">
+              <p className="text-[1rem] md:text-[1rem] text-neutral-600 leading-[150%] mt-0 mb-4">
                 {item.answer}
               </p>
             </div>

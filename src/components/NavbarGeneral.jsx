@@ -25,6 +25,7 @@ const HamburgerMenu = () => {
           />
         </div>
       </div>
+
       {/* Dropdown Menu Container */}
       <div
         className={`menu fixed top-0 left-0 w-full h-full bg-cover bg-[#e0e0e0] bg-center text-black flex flex-col justify-center items-center z-40 ${

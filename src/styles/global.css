@@ -40,7 +40,7 @@
     body {
       /* BG Image Desktop*/
       background-image: url("background-c.svg");
-      background-position: center;
+      background-position: top;
     }
   }
 }

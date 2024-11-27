@@ -10,7 +10,7 @@ import "../styles/global.css";
 
 <Layout title="Tiket">
   <NavbarGeneral client:load />
-  <main class="prose prose-lg overflow-x-hidden mt-16">
+  <main class="prose prose-lg overflow-x-hidden mt-16 max-w-4xl mx-auto">
     <!-- Tiket Section -->
     <section id="festival" class="pt-16 px-4">
       <h1
@@ -34,7 +34,7 @@ import "../styles/global.css";
           <li class="my-0">Pilih event MyPertamina Fair 2024</li>
         </ol>
         <div class="hidden md:flex justify-center">
-          <Image class="size-80" src={QRCode} alt="QR Code" />
+          <Image class="size-56" src={QRCode} alt="QR Code" />
         </div>
         <div class="flex justify-center gap-8 px-2">
           <div>
@@ -42,7 +42,7 @@ import "../styles/global.css";
               href="https://apps.apple.com/id/app/mypertamina/id1295039064?l=id"
             >
               <Image
-                class="w-full md:w-60 hover:shadow-lg active:shadow-xl"
+                class="w-full md:w-40 hover:shadow-lg active:shadow-xl"
                 src={CtaAppStore}
                 alt="CTA AppStore"
               />
@@ -53,7 +53,7 @@ import "../styles/global.css";
               href="https://play.google.com/store/apps/details?id=com.dafturn.mypertamina-red&pcampaignid=web_share"
             >
               <Image
-                class="w-full md:w-60 hover:shadow-lg active:shadow-xl"
+                class="w-full md:w-40 hover:shadow-lg active:shadow-xl"
                 src={CtaGooglePlay}
                 alt="CTA Google Play"
               />

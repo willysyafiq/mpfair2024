@@ -27,29 +27,29 @@ export default function CountDown({ newYear }) {
   }, [newYear]);
 
   return (
-    <div className="flex bg-[#EB1B31] py-6 px-6 w-full relative">
+    <div className="flex bg-pertamina-red-500 py-6 px-6 w-full md:max-w-xl mx-auto relative">
       <img
         src="/timer-decor-top-b.svg"
         alt="decorative"
-        class="absolute right-[1.25rem] top-[-3rem]"
+        class="absolute right-[1.25rem] top-[-.75rem]"
         width="140"
       />
       <img
         src="/timer-decor-top-a.svg"
         alt="decorative"
-        class="absolute left-[1.25rem] top-[-3rem]"
+        class="absolute left-[1.25rem] top-[-.75rem]"
         width="154"
       />
       <img
         src="/timer-decor-bottom-a.svg"
         alt="decorative"
-        class="absolute left-[0rem] bottom-[-2rem]"
+        class="absolute left-[0rem] bottom-[0rem] md:hidden"
         width="30"
       />
       <img
         src="/timer-decor-bottom-b.svg"
         alt="decorative"
-        class="absolute right-[0rem] bottom-[-2rem]"
+        class="absolute right-[0rem] bottom-[0rem] md:hidden"
         width="30"
       />
 

@@ -11,14 +11,14 @@ const TheDay = new Date("Dec 21, 2024").getTime();
 
 <Layout title="MyPertamina Fair 2024">
   <NavbarHome client:load />
-  <main class="prose prose-lg overflow-x-hidden mt-16">
+  <div class="prose prose-lg overflow-x-hidden mt-16 max-w-4xl mx-auto">
     <!-- Hero Section -->
-    <section class="pt-16 mb-32">
+    <section class="pt-16 md:pt-14 mb-32">
       <!-- Hidden -->
       <h1 class="sr-only">MyPertamina Fair 2024</h1>
       <Image
         src={HeroFig}
-        class="max-w-full mx-auto my-0"
+        class="max-w-full mx-auto my-0 md:w-[560px]"
         alt="Hero"
         loading="eager"
       />
@@ -29,12 +29,12 @@ const TheDay = new Date("Dec 21, 2024").getTime();
           Istora Senayan (GBK)
         </p>
         <p
-          class="text-[1.125rem] leading-[130%] font-raleway font-semibold text-neutral-950 mt-0 text-center"
+          class="text-[1.125rem] leading-[130%] font-raleway font-semibold text-neutral-950 mt-0 text-center md:mb-0"
         >
           21-22 Desember 2024
         </p>
       </div>
-      <div class="flex flex-col items-center px-12">
+      <div class="flex flex-col items-center px-12 md:max-w-md mx-auto">
         <a
           href="/tiket"
           class="block w-full py-3 bg-pertamina-red-500 hover:bg-pertamina-red-600 active:bg-pertamina-red-700 text-center text-white rounded-full no-underline font-raleway font-extrabold text-[1.125rem] leading-[130%] shadow-[0px_6px_10px_4px_rgba(0,0,0,0.15),0px_2px_3px_0px_rgba(0,0,0,0.30)]"
@@ -46,113 +46,122 @@ const TheDay = new Date("Dec 21, 2024").getTime();
         </a>
       </div>
     </section>
-
-    <!-- Countdown -->
-    <section id="countdown">
+  </div>
+  <!-- Countdown -->
+  <section class="md:-mx-64 bg-pertamina-red-500">
+    <div id="countdown">
       <CountDown client:load newYear={TheDay} />
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <!-- Information -->
-      <div id="information" class="px-8 mb-32 mt-28">
-        <h2
-          class="text-center font-raleway text-[1.5rem] font-black leading-[130%]"
-        >
-          Informasi
-        </h2>
-        <div class="grid grid-cols-3 gap-4">
-          <div class="flex justify-center">
-            <a
-              href="/festival#bazaar"
-              class="no-underline hover:text-pertamina-red-500 active:text-pertamina-red-600"
+  <!-- Information -->
+  <section>
+    <div id="information" class="px-8 mb-32 mt-28">
+      <h2
+        class="text-center font-raleway text-[1.5rem] font-black leading-[130%] mb-12"
+      >
+        Informasi
+      </h2>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="flex justify-center mb-8">
+          <a
+            href="/festival#bazaar"
+            class="no-underline hover:text-pertamina-red-500 active:text-pertamina-red-600"
+          >
+            <img
+              src="/icon-bazaar.svg"
+              alt="Bazaar"
+              class="w-18 md:w-32 h-18 my-0"
+            />
+            <p
+              class="text-center mt-2 font-raleway text-[0.9375rem] leading-[130%]"
             >
-              <img src="/icon-bazaar.svg" alt="Bazaar" class="w-18 h-18 my-0" />
-              <p
-                class="text-center mt-2 font-raleway text-[0.9375rem] leading-[130%]"
-              >
-                Bazaar <br />& Market
-              </p>
-            </a>
-          </div>
-          <div class="flex justify-center">
-            <a
-              href="/festival#actvityzone"
-              class="no-underline hover:text-pertamina-red-500 active:text-pertamina-red-600"
+              Bazaar <br />& Market
+            </p>
+          </a>
+        </div>
+        <div class="flex justify-center">
+          <a
+            href="/festival#actvityzone"
+            class="no-underline hover:text-pertamina-red-500 active:text-pertamina-red-600"
+          >
+            <img
+              src="/icon-activity-zone.svg"
+              alt="Activty Zone"
+              class="w-18 md:w-32 h-18 my-0"
+            />
+            <p
+              class="text-center mt-2 font-raleway text-[0.9375rem] leading-[130%]"
             >
-              <img
-                src="/icon-activity-zone.svg"
-                alt="Activty Zone"
-                class="w-18 h-18 my-0"
-              />
-              <p
-                class="text-center mt-2 font-raleway text-[0.9375rem] leading-[130%]"
-              >
-                Activty<br /> Zone
-              </p>
-            </a>
-          </div>
-          <div class="flex justify-center">
-            <a
-              href="/festival"
-              class="no-underline hover:text-pertamina-red-500 active:text-pertamina-red-600"
+              Activty<br /> Zone
+            </p>
+          </a>
+        </div>
+        <div class="flex justify-center">
+          <a
+            href="/festival"
+            class="no-underline hover:text-pertamina-red-500 active:text-pertamina-red-600"
+          >
+            <img
+              src="/icon-festival.svg"
+              alt="Festival"
+              class="w-18 md:w-32 h-18 my-0"
+            />
+            <p
+              class="text-center mt-2 font-raleway text-[0.9375rem] leading-[130%]"
             >
-              <img
-                src="/icon-festival.svg"
-                alt="Festival"
-                class="w-18 h-18 my-0"
-              />
-              <p
-                class="text-center mt-2 font-raleway text-[0.9375rem] leading-[130%]"
-              >
-                Artist <br /> Lineup
-              </p>
-            </a>
-          </div>
-          <div class="flex justify-center">
-            <a
-              href="/point-frenzy"
-              class="no-underline hover:text-pertamina-red-500 active:text-pertamina-red-600"
+              Artist <br /> Lineup
+            </p>
+          </a>
+        </div>
+        <div class="flex justify-center">
+          <a
+            href="/point-frenzy"
+            class="no-underline hover:text-pertamina-red-500 active:text-pertamina-red-600"
+          >
+            <img
+              src="/icon-point-frenzy.svg"
+              alt="Point Frenzy"
+              class="w-18 md:w-32 h-18 my-0"
+            />
+            <p
+              class="text-center mt-2 font-raleway text-[0.9375rem] leading-[130%]"
             >
-              <img
-                src="/icon-point-frenzy.svg"
-                alt="Point Frenzy"
-                class="w-18 h-18 my-0"
-              />
-              <p
-                class="text-center mt-2 font-raleway text-[0.9375rem] leading-[130%]"
-              >
-                Point <br /> Frenzy
-              </p>
-            </a>
-          </div>
-          <div class="flex justify-center">
-            <a
-              href="/venue-map"
-              class="no-underline hover:text-pertamina-red-500 active:text-pertamina-red-600"
+              Point <br /> Frenzy
+            </p>
+          </a>
+        </div>
+        <div class="flex justify-center">
+          <a
+            href="/venue-map"
+            class="no-underline hover:text-pertamina-red-500 active:text-pertamina-red-600"
+          >
+            <img
+              src="/icon-map.svg"
+              alt="Venue Map"
+              class="w-18 md:w-32 h-18 my-0"
+            />
+            <p
+              class="text-center mt-2 font-raleway text-[0.9375rem] leading-[130%]"
             >
-              <img src="/icon-map.svg" alt="Venue Map" class="w-18 h-18 my-0" />
-              <p
-                class="text-center mt-2 font-raleway text-[0.9375rem] leading-[130%]"
-              >
-                Venue <br /> Map
-              </p>
-            </a>
-          </div>
-          <div class="flex justify-center">
-            <a
-              href="/faq"
-              class="no-underline hover:text-pertamina-red-500 active:text-pertamina-red-600"
+              Venue <br /> Map
+            </p>
+          </a>
+        </div>
+        <div class="flex justify-center">
+          <a
+            href="/faq"
+            class="no-underline hover:text-pertamina-red-500 active:text-pertamina-red-600"
+          >
+            <img src="/icon-faq.svg" alt="FAQ" class="w-18 md:w-32 h-18 my-0" />
+            <p
+              class="text-center mt-2 font-raleway text-[0.9375rem] leading-[130%]"
             >
-              <img src="/icon-faq.svg" alt="FAQ" class="w-18 h-18 my-0" />
-              <p
-                class="text-center mt-2 font-raleway text-[0.9375rem] leading-[130%]"
-              >
-                FAQ
-              </p>
-            </a>
-          </div>
+              FAQ
+            </p>
+          </a>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 </Layout>
