@@ -4,7 +4,7 @@ import NavbarGeneral from "../components/NavbarGeneral.jsx";
 import "../styles/global.css";
 ---
 
-<Layout title="Contact">
+<Layout title="Kontak">
   <NavbarGeneral client:load />
   <main class="prose prose-lg overflow-x-hidden mt-16">
     <section
@@ -15,11 +15,79 @@ import "../styles/global.css";
       <h1
         class="text-center font-raleway text-[1.5rem] font-black leading-[130%]"
       >
-        FAQ
+        Kontak
       </h1>
       <div
-        class="bg-white py-8 px-4 rounded-lg shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
+        class="bg-white py-2 px-6 rounded-lg shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
       >
+        <a href="#" class="no-underline hover:text-red-500">
+          <div class="flex items-center justify-between w-full">
+            <div class="flex items-center gap-3">
+              <div>
+                <img
+                  src="contact-whatsapp.svg"
+                  alt="Contact Icon"
+                  class="size-9"
+                />
+              </div>
+              <div>
+                <p
+                  class="my-0 font-raleway text-[1rem] font-extrabold leading-[150%]"
+                >
+                  <strong>WhatsApp</strong>
+                </p>
+                <p class="my-0 text-[1rem] leading-[150%]">
+                  0812345678910 (chat only)
+                </p>
+              </div>
+            </div>
+            <img class="size-5" src="arrow-forward.svg" alt="Arrow" />
+          </div>
+        </a>
+        <a href="#" class="no-underline hover:text-red-500">
+          <div class="flex items-center justify-between w-full">
+            <div class="flex items-center gap-3">
+              <div>
+                <img
+                  src="contact-instagram.svg"
+                  alt="Contact Icon"
+                  class="size-9"
+                />
+              </div>
+              <div>
+                <p
+                  class="my-0 font-raleway text-[1rem] font-extrabold leading-[150%]"
+                >
+                  <strong>Instagram</strong>
+                </p>
+                <p class="my-0 leading-[150%]">@instagram.account</p>
+              </div>
+            </div>
+            <img class="size-5" src="arrow-forward.svg" alt="Arrow" />
+          </div>
+        </a>
+        <a href="#" class="no-underline hover:text-red-500">
+          <div class="flex items-center justify-between w-full">
+            <div class="flex items-center gap-3">
+              <div>
+                <img
+                  src="contact-email.svg"
+                  alt="Contact Icon"
+                  class="size-9"
+                />
+              </div>
+              <div>
+                <p
+                  class="my-0 font-raleway text-[1rem] font-extrabold leading-[150%]"
+                >
+                  <strong>Email</strong>
+                </p>
+                <p class="my-0 leading-[150%]">someone@email.com</p>
+              </div>
+            </div>
+            <img class="size-5" src="arrow-forward.svg" alt="Arrow" />
+          </div>
+        </a>
       </div>
     </section>
   </main>
