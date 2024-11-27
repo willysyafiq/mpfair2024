@@ -23,11 +23,24 @@
     h3 {
       color: #0a0a0a;
     }
+
+    /* BG Image Mobile*/
+    background-image: url("background-c.svg");
+    background-color: #e0e0e0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
   }
 
   @screen lg {
     html {
       font-size: 18px;
+    }
+    body {
+      /* BG Image Desktop*/
+      background-image: url("background-c.svg");
+      background-position: center;
     }
   }
 }

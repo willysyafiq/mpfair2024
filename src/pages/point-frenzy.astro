@@ -8,13 +8,9 @@ import DiskonSpesial from "../assets/diskon-spesial-card.png";
 
 <Layout title="Point Frenzy">
   <NavbarGeneral client:load />
-  <main class="prose prose-lg overflow-x-hidden mt-16">
+  <main class="prose prose-lg overflow-x-hidden pt-14 mt-16 mb-24">
     <!-- Artist Section -->
-    <section
-      id="artist"
-      class="pt-16 px-4 w-full h-screen bg-no-repeat bg-cover bg-top"
-      style="background-image: url('/background-c.svg');"
-    >
+    <section id="artist">
       <div class="px-4">
         <h1
           class="text-center font-raleway text-[1.5rem] font-black leading-[130%]"
@@ -28,7 +24,7 @@ import DiskonSpesial from "../assets/diskon-spesial-card.png";
       </div>
 
       <!-- Diskon Spesial -->
-      <Image src={DiskonSpesial} alt="Diskon Spesial" class="px-4" />
+      <Image src={DiskonSpesial} alt="Diskon Spesial" class="px-4 pb-6" />
 
       <div class="grid grid-cols-3 mb-6">
         <div class="flex justify-center">

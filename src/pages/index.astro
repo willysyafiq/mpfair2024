@@ -13,10 +13,7 @@ const TheDay = new Date("Dec 21, 2024").getTime();
   <NavbarHome client:load />
   <main class="prose prose-lg overflow-x-hidden mt-16">
     <!-- Hero Section -->
-    <section
-      class="pt-16 w-full h-screen bg-[#E0E0E0] bg-no-repeat bg-cover bg-top"
-      style="background-image: url('/background-c.svg');"
-    >
+    <section class="pt-16 mb-32">
       <!-- Hidden -->
       <h1 class="sr-only">MyPertamina Fair 2024</h1>
       <Image
@@ -50,16 +47,14 @@ const TheDay = new Date("Dec 21, 2024").getTime();
       </div>
     </section>
 
-    <section
-      id="countdown"
-      class="w-full h-screen bg-[#e0e0e0] bg-no-repeat bg-cover bg-top"
-      style="background-image: url('/background-c.svg');"
-    >
-      <!-- Countdown -->
+    <!-- Countdown -->
+    <section id="countdown">
       <CountDown client:load newYear={TheDay} />
+    </section>
 
+    <section>
       <!-- Information -->
-      <div id="information" class="px-8 mb-28 mt-20">
+      <div id="information" class="px-8 mb-32 mt-28">
         <h2
           class="text-center font-raleway text-[1.5rem] font-black leading-[130%]"
         >
