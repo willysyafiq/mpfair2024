@@ -7,6 +7,13 @@ export default {
 				raleway: ['Raleway', 'sans-serif'],
 				cabin: ['Cabin', 'sans-serif'],
 			},
+			colors: {
+				'pertamina-red': {
+					500: '#EB1B31',
+					600: '#D31327',
+					700: '#C01123',
+				},
+			},
 		},
 	},
 	plugins: [

@@ -43,7 +43,7 @@ const HamburgerMenu = () => {
             <li className="w-full">
               <a
                 href="/tiket"
-                className="block w-full py-3 bg-[#EB1B31] text-center text-white rounded-full no-underline font-raleway font-extrabold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
+                className="block w-full py-3 bg-pertamina-red-500 hover:bg-pertamina-red-600 active:bg-pertamina-red-700 text-center text-white rounded-full no-underline font-raleway font-extrabold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
               >
                 Beli Tiket
               </a>
@@ -51,7 +51,7 @@ const HamburgerMenu = () => {
             <li className="w-full">
               <a
                 href="/point-frenzy"
-                className="block w-full py-3 bg-white text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
+                className="block w-full py-3 bg-white hover:bg-neutral-100 text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
               >
                 Point Frenzy
               </a>
@@ -59,7 +59,7 @@ const HamburgerMenu = () => {
             <li className="w-full">
               <a
                 href="/festival"
-                className="block w-full py-3 bg-white text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
+                className="block w-full py-3 bg-white hover:bg-neutral-100 text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
               >
                 Festival
               </a>
@@ -67,7 +67,7 @@ const HamburgerMenu = () => {
             <li className="w-full">
               <a
                 href="/venue-map"
-                className="block w-full py-3 bg-white text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
+                className="block w-full py-3 bg-white hover:bg-neutral-100 text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
               >
                 Venue Map
               </a>
@@ -75,7 +75,7 @@ const HamburgerMenu = () => {
             <li className="w-full">
               <a
                 href="/faq"
-                className="block w-full py-3 bg-white text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
+                className="block w-full py-3 bg-white hover:bg-neutral-100 text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
               >
                 FAQ
               </a>
@@ -83,7 +83,7 @@ const HamburgerMenu = () => {
             <li className="w-full">
               <a
                 href="/contact"
-                className="block w-full py-3 bg-white text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
+                className="block w-full py-3 bg-white hover:bg-neutral-100 text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
               >
                 Contact
               </a>
