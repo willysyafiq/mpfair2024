@@ -8,9 +8,9 @@ const Accordion = ({ data }) => {
   };
 
   return (
-    <div className="flex flex-col gap-4 w-full">
+    <div className="flex flex-col gap-4 w-full px-2">
       {data.map((item, index) => (
-        <div key={index} className="w-full mb-0">
+        <div key={index} className="w-full mb-1">
           <div
             className="cursor-pointer flex flex-row md:flex-row gap-3 w-full"
             onClick={() => handleToggle(index)}
@@ -18,24 +18,23 @@ const Accordion = ({ data }) => {
             <p className="text-[1rem] md:text-[1.125rem] leading-[150%] font-raleway font-extrabold flex-grow mt-0 mb-2">
               {item.question}
             </p>
-            <span>
-              {activeIndex === index ? (
-                <img
-                  className="w-5 h-5 transform rotate-90 my-0"
-                  src="arrow-forward.svg"
-                  alt="arrow"
-                />
-              ) : (
-                <img
-                  className="w-5 h-5 my-0"
-                  src="arrow-forward.svg"
-                  alt="arrow"
-                />
-              )}
-            </span>
+
+            {activeIndex === index ? (
+              <img
+                className="w-5 h-5 transform rotate-90 my-0"
+                src="arrow-forward.svg"
+                alt="arrow"
+              />
+            ) : (
+              <img
+                className="w-5 h-5 my-0"
+                src="arrow-forward.svg"
+                alt="arrow"
+              />
+            )}
           </div>
           {activeIndex === index && (
-            <div className="accordion-content w-full">
+            <div className="w-full">
               <p className="text-[1rem] md:text-[1.125rem] leading-[150%] mt-0 mb-4">
                 {item.answer}
               </p>
