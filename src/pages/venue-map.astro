@@ -10,7 +10,7 @@ import "../styles/global.css";
 <Layout title="Venue Map">
   <NavbarGeneral client:load />
   <main class="prose prose-lg overflow-x-hidden mt-16 max-w-4xl mx-auto">
-    <section id="festival" class="pt-16 px-4">
+    <section id="festival" class="pt-16 px-4 mb-48">
       <h1
         class="text-center font-raleway text-[1.5rem] font-black leading-[130%]"
       >
@@ -44,9 +44,11 @@ import "../styles/global.css";
           <!-- Modal -->
           <div
             id="modal"
-            class="fixed inset-0 bg-black bg-opacity-50 items-center justify-center hidden z-50 p-4"
+            class="fixed inset-0 bg-black bg-opacity-50 items-center justify-center hidden z-50 p-4 overflow-auto"
           >
-            <div class="bg-white w-full h-full relative rounded-lg">
+            <div
+              class="bg-white w-full h-full relative rounded-lg overflow-auto"
+            >
               <button
                 class="absolute top-4 right-4 text-black"
                 onclick="document.getElementById('modal').classList.add('hidden');"

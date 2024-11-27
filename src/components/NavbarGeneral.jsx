@@ -39,7 +39,7 @@ const HamburgerMenu = () => {
         >
           &times; {/* Close icon */}
         </div>
-        <nav className="w-full px-8">
+        <nav className="w-full px-8 md:max-w-lg">
           <ul className="space-y-4 text-lg font-cabin w-full">
             <li className="w-full">
               <a
