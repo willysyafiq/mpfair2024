@@ -22,13 +22,13 @@ const Accordion = ({ data }) => {
             {activeIndex === index ? (
               <img
                 className="w-5 h-5 transform rotate-90 my-0"
-                src="arrow-forward.svg"
+                src="/arrow-forward.svg"
                 alt="arrow"
               />
             ) : (
               <img
                 className="w-5 h-5 my-0"
-                src="arrow-forward.svg"
+                src="/arrow-forward.svg"
                 alt="arrow"
               />
             )}
