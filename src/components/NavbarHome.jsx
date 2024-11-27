@@ -27,10 +27,10 @@ const HamburgerMenu = () => {
       </div>
       {/* Dropdown Menu Container */}
       <div
-        className={`menu fixed top-0 left-0 w-full h-full bg-cover bg-white bg-center text-black flex flex-col justify-center items-center z-40 ${
+        className={`menu fixed top-0 left-0 w-full h-full bg-cover bg-[#e0e0e0] bg-center text-black flex flex-col justify-center items-center z-40 ${
           isOpen ? "flex" : "hidden"
         }`}
-        style={{ backgroundImage: "url('/background-b.svg')" }}
+        style={{ backgroundImage: "url('/background-c.svg')" }}
       >
         <div
           className="close cursor-pointer absolute top-5 right-5"

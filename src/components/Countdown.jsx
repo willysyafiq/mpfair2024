@@ -54,7 +54,7 @@ export default function CountDown({ newYear }) {
       />
 
       <div class="flex flex-col justify-center bg-white p-[0.875rem_1rem_1.125rem_1rem] rounded-l-lg flex-1 border-r-2 border-[#E2E2E2]">
-        <div class="font-raleway text-[1.5rem] text-center font-black leading-[130%]">
+        <div class="font-raleway text-[1.5rem] text-center font-black text-slate-800 leading-[130%]">
           {days}
         </div>
         <div class="font-raleway text-[.75rem] text-center text-slate-500 font-extrabold leading-[130%]">
@@ -63,7 +63,7 @@ export default function CountDown({ newYear }) {
       </div>
 
       <div class="flex flex-col justify-center bg-white p-[0.875rem_1rem_1.125rem_1rem] flex-1 border-r-2 border-[#E2E2E2]">
-        <div class="font-raleway text-[1.5rem] text-center font-black leading-[130%]">
+        <div class="font-raleway text-[1.5rem] text-center font-black text-slate-800 leading-[130%]">
           {hours}
         </div>
         <div class="font-raleway text-[.75rem] text-center text-slate-500 font-extrabold leading-[130%]">
@@ -72,7 +72,7 @@ export default function CountDown({ newYear }) {
       </div>
 
       <div class="flex flex-col justify-center bg-white p-[0.875rem_1rem_1.125rem_1rem] flex-1 border-r-2 border-[#E2E2E2]">
-        <div class="font-raleway text-[1.5rem] text-center font-black leading-[130%]">
+        <div class="font-raleway text-[1.5rem] text-center font-black text-slate-800 leading-[130%]">
           {minutes}
         </div>
         <div class="font-raleway text-[.75rem] text-center text-slate-500 font-extrabold leading-[130%]">
@@ -81,7 +81,7 @@ export default function CountDown({ newYear }) {
       </div>
 
       <div class="flex flex-col justify-center bg-white p-[0.875rem_1rem_1.125rem_1rem] rounded-r-lg flex-1">
-        <div class="font-raleway text-[1.5rem] text-center font-black leading-[130%]">
+        <div class="font-raleway text-[1.5rem] text-center font-black text-slate-800 leading-[130%]">
           {seconds}
         </div>
         <div class="font-raleway text-[.75rem] text-center text-slate-500 font-extrabold leading-[130%]">
