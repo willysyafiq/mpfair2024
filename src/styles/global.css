@@ -12,6 +12,13 @@
 @layer base {
   html {
     font-size: 16px;
+    /* BG Image Mobile*/
+    background-image: url("/background-c.png");
+    background-color: #e0e0e0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
   }
 
   body {
@@ -23,26 +30,11 @@
     h3 {
       color: #0a0a0a;
     }
-
-    /* BG Image Mobile*/
-    background-image: url("/background-c.png");
-    background-color: #e0e0e0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-attachment: fixed;
   }
 
   @screen lg {
     html {
       font-size: 18px;
-    }
-    body {
-      /* BG Image Desktop*/
-      background-image: url("/background-c.svg");
-      background-size: cover;
-      background-position: center top;
-      background-attachment: fixed;
     }
   }
 }
