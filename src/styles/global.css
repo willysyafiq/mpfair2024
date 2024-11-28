@@ -27,10 +27,10 @@
     /* BG Image Mobile*/
     background-image: url("/background-c.svg");
     background-color: #e0e0e0;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    background-attachment: scroll;
+    background-attachment: fixed;
   }
 
   @screen lg {
@@ -41,7 +41,7 @@
       /* BG Image Desktop*/
       background-image: url("/background-c.svg");
       background-size: cover;
-      background-position: top;
+      background-position: center top;
       background-attachment: fixed;
     }
   }
