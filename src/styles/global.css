@@ -15,7 +15,7 @@
     /* BG Image Mobile*/
     background-image: url("/background-c.png");
     background-color: #e0e0e0;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: local, scroll;
